@@ -12,14 +12,13 @@ namespace SiteMock
     {
         private readonly IDisposable _server;
 
-        public Site():this(8888)
+        public Site():this("http://localhost:8888/")
         {
         }
 
-        public Site(int port)
+        public Site(string url)
         {
-            var siteUri = string.Format("http://localhost:{0}", port);
-            _server = WebApp.Start(siteUri, (app) =>
+            _server = WebApp.Start(url, (app) =>
             {
                 var builder = new ContainerBuilder();
                 builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
@@ -35,7 +34,7 @@ namespace SiteMock
                 app.Use<HeadersMiddleware>();
                 app.Use<StatusCodeMiddleware>();
             });
-            Trace.WriteLine(string.Format("Site Started at {0}", siteUri));
+            Trace.WriteLine(string.Format("Site Started at {0}", url));
         }
         public void Dispose()
         {
