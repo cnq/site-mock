@@ -5,10 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SiteMock")]
-[assembly: AssemblyCompany("Ceenq Cloud Solutions Inc.")]
-[assembly: AssemblyDescription("A quick and easy way to stand up a fake web application for network infrastructure, firewall, cache, and proxy testing")]
-[assembly: AssemblyProduct("SiteMock")]
+[assembly: AssemblyTitle("SiteMock.Host")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SiteMock.Host")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3aee08c0-d2a3-4ac4-acac-5804165f5cb9")]
+[assembly: Guid("2f765fb0-eb94-49b4-b45a-da74e99fe214")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -30,4 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.4.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

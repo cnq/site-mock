@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postbuild", "postbuild", "{
 		SiteMock\PostBuild\upload-package.bat = SiteMock\PostBuild\upload-package.bat
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteMock.Host", "SiteMock.Host\SiteMock.Host.csproj", "{985D5FF4-022F-47EF-89BB-92F27D4D54FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{2D20A9A3-03E0-404A-B0EA-8C8513BC9BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D20A9A3-03E0-404A-B0EA-8C8513BC9BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D20A9A3-03E0-404A-B0EA-8C8513BC9BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985D5FF4-022F-47EF-89BB-92F27D4D54FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985D5FF4-022F-47EF-89BB-92F27D4D54FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985D5FF4-022F-47EF-89BB-92F27D4D54FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985D5FF4-022F-47EF-89BB-92F27D4D54FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
