@@ -12,7 +12,8 @@ namespace SiteMock
     {
         private readonly IDisposable _server;
 
-        public Site():this("http://localhost:8888/")
+        public Site()
+            : this("http://localhost:8888/")
         {
         }
 
@@ -26,6 +27,13 @@ namespace SiteMock
                    .AsImplementedInterfaces();
 
                 app.UseAutofacMiddleware(builder.Build());
+                app.Use((context, next) =>
+                {
+                    context.Environment["Logger"] = new Logger();
+
+                    return next();
+                });
+                //app.Use<TraceMiddleware>();
                 app.Use<ImageMiddleware>();
                 app.Use<PageContentMiddleware>();
                 app.Use<CssContentMiddleware>();

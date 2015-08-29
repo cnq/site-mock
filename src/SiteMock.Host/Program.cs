@@ -6,8 +6,8 @@ namespace SiteMock.Host
     {
         static void Main(string[] args)
         {
-            Console.WindowWidth = Console.LargestWindowWidth;
-            using (var site = new Site("http://localhost:8888/"))
+            Console.WindowWidth = Console.WindowWidth + 90;
+            using (var site = new Site("http://*:8888/"))
             {
                 Console.Read();
             }

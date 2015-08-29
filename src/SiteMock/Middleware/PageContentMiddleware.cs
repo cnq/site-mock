@@ -20,6 +20,7 @@ namespace SiteMock.Middleware
             Finalize = context =>
             {
                 var document = (CQ)context.Environment["document"];
+                context.Response.StatusCode = 200;
                 context.Response.Write(document.Render());
             };
         }
